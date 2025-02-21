@@ -2,57 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-main{
+    font-family:Arial, Helvetica, sans-serif;
     
-    width: 100%;
+}
+ body{
     height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: #3498db;
+    background-image: url(/calculater.jpg);
+    
 }
-.box{
-    margin-top: 50px;
-    width:700px;
-    height:500px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 15px;
-}
-#item{
-
-    padding: 10px;
-    font-size:20px ;
-    width: 100%;
-    display: block;
-    border: 0;
-    outline: 0;
-    box-shadow: 0px 0px 2px grey;
-}
-#to-do-box{
-    margin-top: 20px;
-    list-style: none;
-}
-
-#to-do-box li{
+ .container{
     position: relative;
-    background-color: #2c3350;
-    color:white;
-    padding: 10px;
-    border-radius:2px ;
-    padding-right: 30px;
-    text-align:justify;
-    margin-top: 10px;
-    user-select: none;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 5%;
+    padding: 10px 20px 20px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgb(0, 0, 0 , 0.5);
+ }
+ .display{
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border:none ;
+    text-align:right;
+    margin-bottom:10px;
+    font-size: 25px;
+    cursor: pointer;
+    color:black;
+    pointer-events: none;
+
 
 }
-#to-do-box li i{
-    position: absolute;
-    right: 10px;
-    top: 10px;
+ .buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
 }
-.done{
-    text-decoration:line-through;
-    color: black;
-    background-color: #95a5a6!important;
+.display{
+    height: 80px;
+    width: 100%;
+}
+.buttons button{
+    padding: 12px 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #eee;
+
+}
+.buttons button:active{
+transform: scale(0.99);
+}
+.opereter{
+    color: rgb(0, 0, 255);
 }
